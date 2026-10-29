@@ -253,4 +253,7 @@
   <data name="WebsiteButtonDescription" xml:space="preserve">
     <value>Открыть сайт File Converter</value>
   </data>
+  <data name="Theme" xml:space="preserve">
+    <value>Тема оформления</value>
+  </data>
 </root>

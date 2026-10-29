@@ -765,6 +765,12 @@ namespace FileConverter.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Hardware acceleration mode.
         /// </summary>
+        public static string Theme {
+            get {
+                return ResourceManager.GetString("Theme", resourceCulture) ?? "Theme";
+            }
+        }
+
         public static string HardwareAccelerationMode {
             get {
                 return ResourceManager.GetString("HardwareAccelerationMode", resourceCulture);

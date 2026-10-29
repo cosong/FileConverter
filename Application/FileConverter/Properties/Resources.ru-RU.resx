@@ -592,4 +592,7 @@
   <data name="CopyFilesInClipboardAfterConversion" xml:space="preserve">
     <value>Копирование файлов в буфер обмена после конвертации</value>
   </data>
+  <data name="Theme" xml:space="preserve">
+    <value>Тема оформления</value>
+  </data>
 </root>

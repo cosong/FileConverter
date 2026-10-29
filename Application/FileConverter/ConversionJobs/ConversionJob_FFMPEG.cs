@@ -1,4 +1,4 @@
-﻿// <copyright file="ConversionJob_FFMPEG.cs" company="AAllard">License: http://www.gnu.org/licenses/gpl.html GPL version 3.</copyright>
+// <copyright file="ConversionJob_FFMPEG.cs" company="AAllard">License: http://www.gnu.org/licenses/gpl.html GPL version 3.</copyright>
 
 namespace FileConverter.ConversionJobs
 {
@@ -98,7 +98,14 @@ namespace FileConverter.ConversionJobs
                 // Custom command override other settings.
                 string customCommand = this.ConversionPreset.GetSettingsValue<string>(ConversionPreset.ConversionSettingKeys.FFMPEGCustomCommand) ?? string.Empty;
 
-                string arguments = $"{baseArgs} -i \"{this.InputFilePath}\" {customCommand} \"{this.OutputFilePath}\"";
+                string hwAccelArg = string.Empty;
+                if (settingsService.Settings.HardwareAccelerationMode == Helpers.HardwareAccelerationMode.CUDA)
+                {
+                    string cuvidDecoder = this.GetCuvidDecoder(this.InputFilePath);
+                    hwAccelArg = !string.IsNullOrEmpty(cuvidDecoder) ? $"-c:v {cuvidDecoder}" : "-hwaccel cuda";
+                }
+
+                string arguments = $"{baseArgs} {hwAccelArg} -i \"{this.InputFilePath}\" {customCommand} \"{this.OutputFilePath}\"";
                 this.ffmpegArgumentStringByPass.Add(new FFMpegPass(arguments));
 
                 return;
@@ -285,7 +292,7 @@ namespace FileConverter.ConversionJobs
                                 int nvencQP = this.H264QualityToCRF(videoEncodingQuality);
                                 videoCodecArgs = $"-preset {this.H264EncodingSpeedToNVENCPreset(videoEncodingSpeed)} -rc constqp -qp {nvencQP}";
 
-                                hwAccelArg = string.Empty;
+                                hwAccelArg = !string.IsNullOrEmpty(this.GetCuvidDecoder(this.InputFilePath)) ? $"-c:v {this.GetCuvidDecoder(this.InputFilePath)}" : "-hwaccel cuda";
                                 break;
 
                             case Helpers.HardwareAccelerationMode.AMF:
@@ -602,6 +609,65 @@ namespace FileConverter.ConversionJobs
         {
             this.actualConvertedDuration = convertedDuration;
             this.Progress = this.actualConvertedDuration.Ticks / (float)this.fileDuration.Ticks;
+        }
+
+                private string GetCuvidDecoder(string inputFilePath)
+        {
+            try
+            {
+                string ffmpegPath = this.FfmpegPath;
+                if (!File.Exists(ffmpegPath) || string.IsNullOrEmpty(inputFilePath) || !File.Exists(inputFilePath))
+                {
+                    return null;
+                }
+
+                var psi = new ProcessStartInfo(ffmpegPath, $"-hide_banner -i \"{inputFilePath}\"")
+                {
+                    CreateNoWindow = true,
+                    UseShellExecute = false,
+                    RedirectStandardError = true,
+                    RedirectStandardOutput = true
+                };
+
+                using (var proc = Process.Start(psi))
+                {
+                    string output = proc.StandardError.ReadToEnd();
+                    proc.WaitForExit(1500);
+
+                    var match = Regex.Match(output, @"Stream\s+#\d+:\d+(?:\[0x[0-9a-fA-F]+\])?(?:\([^)]*\))?:\s+Video:\s+([a-zA-Z0-9_-]+)");
+                    if (match.Success)
+                    {
+                        string codec = match.Groups[1].Value.ToLowerInvariant();
+                        switch (codec)
+                        {
+                            case "av1":
+                                return "av1_cuvid";
+                            case "hevc":
+                            case "h265":
+                                return "hevc_cuvid";
+                            case "h264":
+                                return "h264_cuvid";
+                            case "vp9":
+                                return "vp9_cuvid";
+                            case "vc1":
+                                return "vc1_cuvid";
+                            case "mpeg4":
+                                return "mpeg4_cuvid";
+                            case "mpeg2video":
+                            case "mpeg2":
+                                return "mpeg2_cuvid";
+                            case "mjpeg":
+                                return "mjpeg_cuvid";
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Diagnostics.Debug.Log($"Failed to detect hardware decoder: {ex.Message}");
+            }
+
+            return null;
         }
 
         private struct FFMpegPass

@@ -48,6 +48,7 @@ namespace FileConverter.ViewModels
         private ListCollectionView outputTypes;
         private CultureInfo[] supportedCultures;
         private Helpers.HardwareAccelerationMode[] hardwareAccelerationModes = { Helpers.HardwareAccelerationMode.Off, Helpers.HardwareAccelerationMode.CUDA, Helpers.HardwareAccelerationMode.AMF };
+        private ApplicationTheme[] themes = { ApplicationTheme.Light, ApplicationTheme.Dark };
 
         public event Action OnPresetCreated;
         public event Action OnFolderCreated;
@@ -239,6 +240,16 @@ namespace FileConverter.ViewModels
             set
             {
                 this.hardwareAccelerationModes = value;
+                this.OnPropertyChanged();
+            }
+        }
+
+        public ApplicationTheme[] Themes
+        {
+            get => this.themes;
+            set
+            {
+                this.themes = value;
                 this.OnPropertyChanged();
             }
         }

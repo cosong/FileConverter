@@ -20,6 +20,7 @@ namespace FileConverter.Services
             // Load settigns.
             Debug.Log("Load settings...");
             this.Settings = this.Load();
+            ThemeManager.ApplyTheme(this.Settings?.Theme ?? ApplicationTheme.Light);
         }
 
         public Settings Settings

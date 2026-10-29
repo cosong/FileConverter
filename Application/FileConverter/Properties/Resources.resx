@@ -616,4 +616,7 @@ use maj for uppercase version</value>
   <data name="HardwareAccelerationModeVulkanName" xml:space="preserve">
     <value>Vulkan</value>
   </data>
+  <data name="Theme" xml:space="preserve">
+    <value>Theme</value>
+  </data>
 </root>

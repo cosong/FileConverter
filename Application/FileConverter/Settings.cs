@@ -23,6 +23,7 @@ namespace FileConverter
         private int maximumNumberOfSimultaneousConversions;
         private bool copyFilesInClipboardAfterConversion = false;
         private Helpers.HardwareAccelerationMode hardwareAccelerationMode = Helpers.HardwareAccelerationMode.Off;
+        private ApplicationTheme theme = ApplicationTheme.Light;
 
         public ConversionPreset GetPresetFromName(string presetName)
         {
@@ -237,8 +238,25 @@ namespace FileConverter
                 this.OnPropertyChanged();
             }
         }
+
+        [XmlElement]
+        public ApplicationTheme Theme
+        {
+            get
+            {
+                return this.theme;
+            }
+
+            set
+            {
+                this.theme = value;
+                this.OnPropertyChanged();
+                FileConverter.Services.ThemeManager.ApplyTheme(value);
+            }
+        }
         public void OnDeserializationComplete()
         {
+            FileConverter.Services.ThemeManager.ApplyTheme(this.theme);
             this.DurationBetweenEndOfConversionsAndApplicationExit = System.Math.Max(0, System.Math.Min(10, this.DurationBetweenEndOfConversionsAndApplicationExit));
 
             for (int index = 0; index < this.ConversionPresets.Count; index++)

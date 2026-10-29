@@ -1,4 +1,4 @@
-﻿// <copyright file="ConversionJob_FFMPEG.Converters.cs" company="AAllard">License: http://www.gnu.org/licenses/gpl.html GPL version 3.</copyright>
+// <copyright file="ConversionJob_FFMPEG.Converters.cs" company="AAllard">License: http://www.gnu.org/licenses/gpl.html GPL version 3.</copyright>
 
 namespace FileConverter.ConversionJobs
 {
@@ -104,7 +104,7 @@ namespace FileConverter.ConversionJobs
                 transformArgs += rotationArgs;
             }
 
-            if (hwAccel != Helpers.HardwareAccelerationMode.CUDA && (conversionPreset.OutputType == OutputType.Mkv || conversionPreset.OutputType == OutputType.Mp4))
+            if (conversionPreset.OutputType == OutputType.Mkv || conversionPreset.OutputType == OutputType.Mp4)
             {
                 // For H.264 in MP4/MKV, force yuv420p for broad player compatibility:
                 // http://trac.ffmpeg.org/wiki/Encode/H.264#Encodingfordumbplayers

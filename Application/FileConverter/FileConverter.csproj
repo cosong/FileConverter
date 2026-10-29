@@ -140,6 +140,7 @@
     <Compile Include="Services\ISettingsService.cs" />
     <Compile Include="Services\IUpgradeService.cs" />
     <Compile Include="Services\NavigationService.cs" />
+    <Compile Include="Services\ThemeManager.cs" />
     <Compile Include="PathHelpers.cs" />
     <Compile Include="Properties\Resources.en.Designer.cs">
       <DependentUpon>Resources.en.resx</DependentUpon>
@@ -154,6 +155,7 @@
     <Compile Include="Services\UpgradeService.cs" />
     <Compile Include="Services\UpgradeVersionDescription.cs" />
     <Compile Include="ValueConverters\HardwareAccelerationModeToString.cs" />
+    <Compile Include="ValueConverters\ApplicationThemeToString.cs" />
     <Compile Include="ValueConverters\ConversionJobsToProgressState.cs" />
     <Compile Include="ValueConverters\ApplicationVersionToApplicationName.cs" />
     <Compile Include="ConversionPreset\ConversionPreset.cs" />
@@ -246,6 +248,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Views\Resources\Colors.Dark.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Views\Resources\CustomStyles.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -261,6 +267,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="OutputType.cs" />
+    <Compile Include="ApplicationTheme.cs" />
     <Compile Include="Properties\Annotations.cs">
       <ExcludeFromStyleCop>true</ExcludeFromStyleCop>
     </Compile>

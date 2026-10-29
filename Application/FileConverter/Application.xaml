@@ -1,4 +1,4 @@
-﻿<Application x:Class="FileConverter.Application"
+<Application x:Class="FileConverter.Application"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
@@ -56,6 +56,7 @@
 
             <!-- Converters -->
             <valueConverters:ApplicationVersionToApplicationName x:Key="ApplicationVersionToApplicationName"/>
+            <valueConverters:ApplicationThemeToString x:Key="ApplicationThemeToString"/>
             <generic:BoolToVisibility x:Key="BoolToVisibility"/>
 
             <generic:ValueConverterGroup x:Key="EnumEqualsToVisibility">
