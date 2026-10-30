@@ -1,0 +1,564 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root xmlns:ns1="urn:schemas-microsoft-com:xml-msdata" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  
+  <xs:schema id="root">
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xs:element name="root" ns1:IsDataSet="true">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="metadata">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" />
+              </xs:sequence>
+              <xs:attribute name="name" use="required" type="xsd:string" />
+              <xs:attribute name="type" type="xsd:string" />
+              <xs:attribute name="mimetype" type="xsd:string" />
+              <xs:attribute ref="xml:space" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="assembly">
+            <xs:complexType>
+              <xs:attribute name="alias" type="xsd:string" />
+              <xs:attribute name="name" type="xsd:string" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="data">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
+                <xs:element name="comment" type="xsd:string" minOccurs="0" ns1:Ordinal="2" />
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" ns1:Ordinal="1" />
+              <xs:attribute name="type" type="xsd:string" ns1:Ordinal="3" />
+              <xs:attribute name="mimetype" type="xsd:string" ns1:Ordinal="4" />
+              <xs:attribute ref="xml:space" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="resheader">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="value" type="xsd:string" minOccurs="0" ns1:Ordinal="1" />
+              </xs:sequence>
+              <xs:attribute name="name" type="xsd:string" use="required" />
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>Про програму</value>
+  </data>
+  <data name="ActionWhenConversionSucceedDescription" xml:space="preserve">
+    <value>Дозволяє вибрати дію з вхідними файлами після успішного завершення конвертації.</value>
+  </data>
+  <data name="ActionWhenConversionSucceedTitle" xml:space="preserve">
+    <value>Дія після успішної конвертації</value>
+  </data>
+  <data name="AddNewPreset" xml:space="preserve">
+    <value>Новий пресет</value>
+  </data>
+  <data name="Application" xml:space="preserve">
+    <value>Програма</value>
+  </data>
+  <data name="AudioTitle" xml:space="preserve">
+    <value>Аудіо</value>
+  </data>
+  <data name="AutomaticallyCheckForUpdates" xml:space="preserve">
+    <value>Автоматично перевіряти оновлення під час запуску File Converter</value>
+  </data>
+  <data name="AutomaticallyExitWhenAllConversionsFinished" xml:space="preserve">
+    <value>Автоматично закривати після завершення всіх конвертацій</value>
+  </data>
+  <data name="ClampToLowestPowerOfTwoSize" xml:space="preserve">
+    <value>Зменшити до найближчого меншого ступеня двійки</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Закрити</value>
+  </data>
+  <data name="ConversionPresets" xml:space="preserve">
+    <value>Пресети конвертації</value>
+  </data>
+  <data name="ConversionQueueTitle" xml:space="preserve">
+    <value>Файли для конвертації</value>
+  </data>
+  <data name="ConvertedFrom" xml:space="preserve">
+    <value>Конвертовано з</value>
+  </data>
+  <data name="Diagnostics" xml:space="preserve">
+    <value>Діагностика</value>
+  </data>
+  <data name="DiagnosticsButtonTooltip" xml:space="preserve">
+    <value>Журнали подій</value>
+  </data>
+  <data name="DocumentationButtonDescription" xml:space="preserve">
+    <value>Відкрити документацію</value>
+  </data>
+  <data name="DonateButtonTitle" xml:space="preserve">
+    <value>Підтримати проект</value>
+  </data>
+  <data name="DonateDescription" xml:space="preserve">
+    <value>Підтримайте розробку проекту, якщо вам подобається програма :)</value>
+  </data>
+  <data name="DownloadAndInstallButtonDescription" xml:space="preserve">
+    <value>Оновлення завантажиться у фоні та встановиться після закриття File Converter.</value>
+  </data>
+  <data name="DownloadAndInstallButtonTitle" xml:space="preserve">
+    <value>Встановити після виходу з File Converter</value>
+  </data>
+  <data name="Encoding" xml:space="preserve">
+    <value>Кодування :</value>
+  </data>
+  <data name="EncodingSpeed" xml:space="preserve">
+    <value>Швидкість кодування</value>
+  </data>
+  <data name="FileConverterStartHelp1" xml:space="preserve">
+    <value>File Converter — це розширення оболонки Windows.</value>
+  </data>
+  <data name="FileConverterStartHelp2" xml:space="preserve">
+    <value>Це означає, що воно інтегроване безпосередньо у Провідник Windows.</value>
+  </data>
+  <data name="FileConverterStartHelp3" xml:space="preserve">
+    <value>Для використання відкрийте Провідник і клацніть правою кнопкою миші на будь-якому файлі, щоб викликати контекстне меню з командами File Converter.</value>
+  </data>
+  <data name="FileNameTemplate" xml:space="preserve">
+    <value>Шаблон імені файлу</value>
+  </data>
+  <data name="FramesPerSecond" xml:space="preserve">
+    <value>Кадрів на секунду :</value>
+  </data>
+  <data name="GitHubButtonDescription" xml:space="preserve">
+    <value>Відкрити сторінку проекту на GitHub</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>Довідка</value>
+  </data>
+  <data name="InputExample" xml:space="preserve">
+    <value>Вхідний приклад</value>
+  </data>
+  <data name="InputFormats" xml:space="preserve">
+    <value>Вхідні формати</value>
+  </data>
+  <data name="InputPostConversionActionDeleteName" xml:space="preserve">
+    <value>Видалити</value>
+  </data>
+  <data name="InputPostConversionActionMoveInArchiveFolderName" xml:space="preserve">
+    <value>Перемістити в папку архіву</value>
+  </data>
+  <data name="InputPostConversionActionNoneName" xml:space="preserve">
+    <value>Немає</value>
+  </data>
+  <data name="InstallButtonDescription" xml:space="preserve">
+    <value>Оновлення завантажено. Закрийте File Converter та встановіть його.</value>
+  </data>
+  <data name="InstallButtonTitle" xml:space="preserve">
+    <value>Встановити після виходу з File Converter</value>
+  </data>
+  <data name="IssueButtonDescription" xml:space="preserve">
+    <value>Повідомити про проблему</value>
+  </data>
+  <data name="MoveDownSelectedPreset" xml:space="preserve">
+    <value>Перемістити пресет вниз</value>
+  </data>
+  <data name="MoveUpSelectedPreset" xml:space="preserve">
+    <value>Перемістити пресет вгору</value>
+  </data>
+  <data name="Mp3CbrDescription" xml:space="preserve">
+    <value>Кодування з постійним бітрейтом (CBR)</value>
+  </data>
+  <data name="Mp3VbrDescription" xml:space="preserve">
+    <value>Кодування зі змінним бітрейтом (VBR)</value>
+  </data>
+  <data name="NinetyDegreesRotationTitle" xml:space="preserve">
+    <value>90°</value>
+  </data>
+  <data name="NinetyDegreesRotationTooltip" xml:space="preserve">
+    <value>Поворот на 90° проти годинникової стрілки</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>ОК</value>
+  </data>
+  <data name="OneEightyDegreesRotationTitle" xml:space="preserve">
+    <value>180°</value>
+  </data>
+  <data name="OneEightyDegreesRotationTooltip" xml:space="preserve">
+    <value>Поворот на 180°</value>
+  </data>
+  <data name="OutputFileNameTemplateSample" xml:space="preserve">
+    <value>C:\Music\Artist\Album\Song.wav</value>
+  </data>
+  <data name="OutputExample" xml:space="preserve">
+    <value>Вихідний приклад</value>
+  </data>
+  <data name="OutputFilePathTemplateHelp" xml:space="preserve">
+    <value>(p): шлях до вхідного файлу
+(f): ім'я вхідного файлу
+(o): розширення вихідного файлу
+(i): розширення вхідного файлу
+(d0): батьківська папка
+(d1): папка вищого рівня
+...
+(n:i): номер сторінки
+(n:c): загальна кількість сторінок
+
+Спеціальні шляхи:
+(p:d): папка Документи
+(p:m): папка Музика
+(p:v): папка Відео
+(p:p): папка Зображення
+
+використовуйте великі літери (напр. (P)) для версії у верхньому регістрі</value>
+  </data>
+  <data name="OutputFormat" xml:space="preserve">
+    <value>Вихідний формат</value>
+  </data>
+  <data name="Preset" xml:space="preserve">
+    <value>Пресет</value>
+  </data>
+  <data name="PresetName" xml:space="preserve">
+    <value>Назва пресета</value>
+  </data>
+  <data name="Quality" xml:space="preserve">
+    <value>Якість</value>
+  </data>
+  <data name="RecommendedBitrateRangeInBlue" xml:space="preserve">
+    <value>Рекомендований діапазон бітрейту позначено синім</value>
+  </data>
+  <data name="RemoveSelectedPreset" xml:space="preserve">
+    <value>Видалити</value>
+  </data>
+  <data name="Rotate" xml:space="preserve">
+    <value>Поворот</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Зберегти</value>
+  </data>
+  <data name="Scale" xml:space="preserve">
+    <value>Масштаб</value>
+  </data>
+  <data name="SeeChangeLog" xml:space="preserve">
+    <value>Переглянути список змін...</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Налаштування</value>
+  </data>
+  <data name="SettingsButtonTooltip" xml:space="preserve">
+    <value>Налаштування</value>
+  </data>
+  <data name="TwoSeventyDegreesRotationTitle" xml:space="preserve">
+    <value>270°</value>
+  </data>
+  <data name="TwoSeventyDegreesRotationTooltip" xml:space="preserve">
+    <value>Поворот на 90° за годинниковою стрілкою</value>
+  </data>
+  <data name="UpgradeAvailable" xml:space="preserve">
+    <value>Доступне оновлення для File Converter. Рекомендуємо встановити його якнайшвидше!</value>
+  </data>
+  <data name="UpgradeDownloadInProgress" xml:space="preserve">
+    <value>Завантаження оновлення...</value>
+  </data>
+  <data name="UpgradeWindowTitle" xml:space="preserve">
+    <value>Оновлення File Converter</value>
+  </data>
+  <data name="VideoEncodingQualityTooltip" xml:space="preserve">
+    <value>Визначає співвідношення 'розмір файлу' до 'якості відео'. Менше значення дасть менший розмір, більше — вищу якість.</value>
+  </data>
+  <data name="VideoEncodingSpeedFasterName" xml:space="preserve">
+    <value>Швидше</value>
+  </data>
+  <data name="VideoEncodingSpeedFastName" xml:space="preserve">
+    <value>Швидко</value>
+  </data>
+  <data name="VideoEncodingSpeedMediumName" xml:space="preserve">
+    <value>Середньо</value>
+  </data>
+  <data name="VideoEncodingSpeedSlowerName" xml:space="preserve">
+    <value>Повільніше</value>
+  </data>
+  <data name="VideoEncodingSpeedSlowName" xml:space="preserve">
+    <value>Повільно</value>
+  </data>
+  <data name="VideoEncodingSpeedSuperFastName" xml:space="preserve">
+    <value>Дуже швидко (Super Fast)</value>
+  </data>
+  <data name="VideoEncodingSpeedTooltip" xml:space="preserve">
+    <value>Визначає співвідношення 'розмір файлу' до 'тривалості стиснення'. Повільніше стиснення забезпечить менший розмір файлу за однакової якості.</value>
+  </data>
+  <data name="VideoEncodingSpeedUltraFastName" xml:space="preserve">
+    <value>Надшвидко (Ultra Fast)</value>
+  </data>
+  <data name="VideoEncodingSpeedVeryFastName" xml:space="preserve">
+    <value>Дуже швидко</value>
+  </data>
+  <data name="VideoEncodingSpeedVerySlowName" xml:space="preserve">
+    <value>Дуже повільно</value>
+  </data>
+  <data name="VideoTitle" xml:space="preserve">
+    <value>Відео</value>
+  </data>
+  <data name="Wav16bitsDescription" xml:space="preserve">
+    <value>PCM 16-біт знаменний little-endian</value>
+  </data>
+  <data name="Wav24bitsDescription" xml:space="preserve">
+    <value>PCM 24-біт знаменний little-endian</value>
+  </data>
+  <data name="Wav32bitsDescription" xml:space="preserve">
+    <value>PCM 32-біт знаменний little-endian</value>
+  </data>
+  <data name="Wav8bitsDescription" xml:space="preserve">
+    <value>PCM 8-біт знаменний little-endian</value>
+  </data>
+  <data name="ZeroDegreesRotationTitle" xml:space="preserve">
+    <value>Немає</value>
+  </data>
+  <data name="ZeroDegreesRotationTooltip" xml:space="preserve">
+    <value>Без повороту</value>
+  </data>
+  <data name="ConversionStateConversion" xml:space="preserve">
+    <value>Конвертація</value>
+  </data>
+  <data name="ConversionStateDone" xml:space="preserve">
+    <value>Готово</value>
+  </data>
+  <data name="ConversionStateExtraction" xml:space="preserve">
+    <value>Вилучення</value>
+  </data>
+  <data name="ConversionStateFailed" xml:space="preserve">
+    <value>Помилка</value>
+  </data>
+  <data name="ConversionStateInQueue" xml:space="preserve">
+    <value>У черзі</value>
+  </data>
+  <data name="ConversionStateReadIntputImage" xml:space="preserve">
+    <value>Читання зображення</value>
+  </data>
+  <data name="ConversionStateReadDocument" xml:space="preserve">
+    <value>Читання документа</value>
+  </data>
+  <data name="StringAnimatedImageName" xml:space="preserve">
+    <value>Анімація</value>
+  </data>
+  <data name="StringAudioName" xml:space="preserve">
+    <value>Аудіо</value>
+  </data>
+  <data name="StringDocumentName" xml:space="preserve">
+    <value>Документ</value>
+  </data>
+  <data name="StringImageName" xml:space="preserve">
+    <value>Зображення</value>
+  </data>
+  <data name="StringVideoName" xml:space="preserve">
+    <value>Відео</value>
+  </data>
+  <data name="ExitWaitingDuration" xml:space="preserve">
+    <value>Час очікування перед закриттям програми</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Мова</value>
+  </data>
+  <data name="MaximumNumberOfSimultaneousConversions" xml:space="preserve">
+    <value>Максимальна кількість одночасних конвертацій</value>
+  </data>
+  <data name="DefaultPresetName" xml:space="preserve">
+    <value>Новий пресет</value>
+  </data>
+  <data name="DownloadingChangeLog" xml:space="preserve">
+    <value>### Завантаження списку змін...</value>
+  </data>
+  <data name="ConversionArchives" xml:space="preserve">
+    <value>Архіви конвертації</value>
+  </data>
+  <data name="ErrorCanceled" xml:space="preserve">
+    <value>Скасовано.</value>
+  </data>
+  <data name="ErrorCantFindFFMPEG" xml:space="preserve">
+    <value>Не вдалося знайти виконуваний файл ffmpeg. Спробуйте перевстановити програму.</value>
+  </data>
+  <data name="ErrorCDAExtractionFailed" xml:space="preserve">
+    <value>Не вдалося вилучити доріжку аудіо CD.</value>
+  </data>
+  <data name="ErrorCDDriveNotReady" xml:space="preserve">
+    <value>CD-привід не готовий.</value>
+  </data>
+  <data name="ErrorFailedToLaunchFFMPEG" xml:space="preserve">
+    <value>Не вдалося запустити ffmpeg.</value>
+  </data>
+  <data name="ErrorFailToCreateOutputPathFolders" xml:space="preserve">
+    <value>Не вдалося створити папки для вихідного шляху.</value>
+  </data>
+  <data name="ErrorFailToGenerateUniqueOutputPath" xml:space="preserve">
+    <value>Не вдалося згенерувати унікальний шлях вихідного файлу.</value>
+  </data>
+  <data name="ErrorFailToReadCDDrive" xml:space="preserve">
+    <value>Не вдалося прочитати CD-привід '{0}'.</value>
+  </data>
+  <data name="ErrorFailToRetrieveInputPathDriveLetter" xml:space="preserve">
+    <value>Не вдалося визначити літеру диска вхідного шляху.</value>
+  </data>
+  <data name="ErrorFailToRetrieveTrackNumber" xml:space="preserve">
+    <value>Не вдалося визначити номер доріжки з CDA-шляху.</value>
+  </data>
+  <data name="ErrorFailToUseCDDriveOpen" xml:space="preserve">
+    <value>Неможливо використати CD-привід, оскільки лоток відкрито.</value>
+  </data>
+  <data name="ErrorInputTypeIncompatibleWithOutputType" xml:space="preserve">
+    <value>Тип вхідного файлу несумісний із вибраним типом вихідного файлу.</value>
+  </data>
+  <data name="ErrorInvalidOutputPath" xml:space="preserve">
+    <value>Згенеровано недійсний шлях до файлу за шаблоном.</value>
+  </data>
+  <data name="ErrorUnsupportedOutputFormat" xml:space="preserve">
+    <value>Непідтримуваний вихідний формат '{0}'.</value>
+  </data>
+  <data name="ChannelCountTitle" xml:space="preserve">
+    <value>Кількість каналів :</value>
+  </data>
+  <data name="ChannelCountTooltip" xml:space="preserve">
+    <value>Змінити кількість аудіоканалів вихідного файлу.</value>
+  </data>
+  <data name="MonoOption" xml:space="preserve">
+    <value>Моно</value>
+  </data>
+  <data name="SameChannelCountOption" xml:space="preserve">
+    <value>Як у вхідному файлі</value>
+  </data>
+  <data name="StereoOption" xml:space="preserve">
+    <value>Стерео</value>
+  </data>
+  <data name="LicenceHeader1" xml:space="preserve">
+    <value>**Ця програма є вільним програмним забезпеченням**.</value>
+  </data>
+  <data name="LicenceHeader2" xml:space="preserve">
+    <value>Ви можете розповсюджувати та/або змінювати її відповідно до умов GNU General Public License.</value>
+  </data>
+  <data name="LicenceHeader3" xml:space="preserve">
+    <value>Програма розповсюджується зі сподіванням, що вона буде корисною, але БЕЗ БУДЬ-ЯКИХ ГАРАНТІЙ. Детальніше дивіться у файлі `LICENSE.md`.</value>
+  </data>
+  <data name="ApplicationIsTerminating" xml:space="preserve">
+    <value>Програма завершує роботу.</value>
+  </data>
+  <data name="ApplicationWillTerminateInMultipleSeconds" xml:space="preserve">
+    <value>Програма автоматично завершить роботу через {0} секунд(и).</value>
+  </data>
+  <data name="ApplicationWillTerminateInOneSecond" xml:space="preserve">
+    <value>Програма автоматично завершить роботу через 1 секунду.</value>
+  </data>
+  <data name="StringMiscName" xml:space="preserve">
+    <value>Різне</value>
+  </data>
+  <data name="ErrorCantFindOutputFiles" xml:space="preserve">
+    <value>Не вдалося знайти вихідний файл(и).</value>
+  </data>
+  <data name="ErrorConversionFailedWithOutput" xml:space="preserve">
+    <value>Конвертація зазнала невдачі, але вихідний файл існує.</value>
+  </data>
+  <data name="ConversionStatePrepareConversion" xml:space="preserve">
+    <value>Підготовка конвертації</value>
+  </data>
+  <data name="ErrorMicrosoftOfficeIsNotAvailable" xml:space="preserve">
+    <value>Для конвертації документів Office необхідно встановити Microsoft Office.</value>
+  </data>
+  <data name="ErrorUnableToUseMicrosoftOffice" xml:space="preserve">
+    <value>Не вдалося відкрити документ через Microsoft Office (перевірте валідність ліцензії та встановлення).</value>
+  </data>
+  <data name="ErrorMicrosoftExcelIsNotAvailable" xml:space="preserve">
+    <value>Для конвертації документів Excel необхідно встановити Microsoft Excel.</value>
+  </data>
+  <data name="ErrorMicrosoftPowerPointIsNotAvailable" xml:space="preserve">
+    <value>Для конвертації документів PowerPoint необхідно встановити Microsoft PowerPoint.</value>
+  </data>
+  <data name="ErrorMicrosoftWordIsNotAvailable" xml:space="preserve">
+    <value>Для конвертації документів Word необхідно встановити Microsoft Word.</value>
+  </data>
+  <data name="WebsiteButtonDescription" xml:space="preserve">
+    <value>Відкрити сайт File Converter</value>
+  </data>
+  <data name="ErrorDuringJobInitialization" xml:space="preserve">
+    <value>Помилка під час ініціалізації завдання конвертації.</value>
+  </data>
+  <data name="CreateANewFolder" xml:space="preserve">
+    <value>Нова папка</value>
+  </data>
+  <data name="DefaultFolderName" xml:space="preserve">
+    <value>Нова папка</value>
+  </data>
+  <data name="PresetFolder" xml:space="preserve">
+    <value>Папка</value>
+  </data>
+  <data name="PresetFolderName" xml:space="preserve">
+    <value>Назва папки</value>
+  </data>
+  <data name="AdvancedMode" xml:space="preserve">
+    <value>Розширений режим</value>
+  </data>
+  <data name="FFMPEGCustomArguments" xml:space="preserve">
+    <value>Власні аргументи</value>
+  </data>
+  <data name="FFMPEGCustomArgumentsTooltip" xml:space="preserve">
+    <value>Власні аргументи командного рядка для FFMPEG</value>
+  </data>
+  <data name="NoPresetSelected" xml:space="preserve">
+    <value>Пресет не вибрано</value>
+  </data>
+  <data name="ExportSelectedPresets" xml:space="preserve">
+    <value>Експорт</value>
+  </data>
+  <data name="ImportPresets" xml:space="preserve">
+    <value>Імпорт</value>
+  </data>
+  <data name="DuplicatePreset" xml:space="preserve">
+    <value>Дублювати</value>
+  </data>
+  <data name="CancelJobTooltip" xml:space="preserve">
+    <value>Скасувати</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Помилка</value>
+  </data>
+  <data name="ErrorCantLoadSettings" xml:space="preserve">
+    <value>Не вдалося завантажити налаштування користувача. Відновити стандартні налаштування?</value>
+  </data>
+  <data name="CopyFilesInClipboardAfterConversion" xml:space="preserve">
+    <value>Копіювати файли в буфер обміну після конвертації</value>
+  </data>
+  <data name="HardwareAccelerationMode" xml:space="preserve">
+    <value>Режим апаратного прискорення</value>
+  </data>
+  <data name="HardwareAccelerationModeAMFName" xml:space="preserve">
+    <value>AMD AMF (Advanced Media Framework)</value>
+  </data>
+  <data name="HardwareAccelerationModeCUDAName" xml:space="preserve">
+    <value>CUDA / NVENC (NVIDIA)</value>
+  </data>
+  <data name="HardwareAccelerationModeD3D11Name" xml:space="preserve">
+    <value>Direct3D 11</value>
+  </data>
+  <data name="HardwareAccelerationModeDXVA2Name" xml:space="preserve">
+    <value>Direct3D 9 / DXVA2</value>
+  </data>
+  <data name="HardwareAccelerationModeOffName" xml:space="preserve">
+    <value>Вимкнено (CPU)</value>
+  </data>
+  <data name="HardwareAccelerationModeOpenCLName" xml:space="preserve">
+    <value>OpenCL</value>
+  </data>
+  <data name="HardwareAccelerationModeVulkanName" xml:space="preserve">
+    <value>Vulkan</value>
+  </data>
+  <data name="Theme" xml:space="preserve">
+    <value>Тема оформлення</value>
+  </data>
+</root>

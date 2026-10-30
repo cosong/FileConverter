@@ -12,11 +12,16 @@ namespace FileConverter.ValueConverters
         {
             if (value is ApplicationTheme theme)
             {
+                string lang = CultureInfo.CurrentUICulture.TwoLetterISOLanguageName.ToLowerInvariant();
                 switch (theme)
                 {
                     case ApplicationTheme.Light:
+                        if (lang == "uk") return "Світла";
+                        if (lang == "ru") return "Светлая";
                         return "Light";
                     case ApplicationTheme.Dark:
+                        if (lang == "uk") return "Темна";
+                        if (lang == "ru") return "Тёмная";
                         return "Dark";
                 }
             }

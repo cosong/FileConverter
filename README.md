@@ -36,6 +36,10 @@ This custom edition builds upon the 2.3 maintenance baseline, adding full **NVID
 - **Windows 10 / 11 DWM Integration**: Automatically styles the native OS window title bar and border to match the dark theme via Desktop Window Manager (`DwmSetWindowAttribute`).
 - **Fully Restyled Controls**: Custom dark styling for TabControls, TreeViews, ComboBoxes, Sliders, ScrollBars, CheckBoxes, RadioButtons, GroupBoxes, and Context Menus.
 
+### 🌐 Ukrainian Localization (Українська локалізація)
+- **Complete Native Translation**: Full translation of the entire application, preset editor, application settings, diagnostics, and context menu integrations into Ukrainian (`uk` / `uk-UA`).
+- **Automatic Detection**: Automatically activates when Windows UI language is Ukrainian, or can be manually selected in **Settings** > **Application** > **Language** (`Українська`).
+
 ### 🛡️ Core Stability & Bug Fixes (2.3 Baseline)
 - Resolved Microsoft Word and Office document conversion crashes and stalls.
 - Fixed FFmpeg process pipe deadlocks during long audio/video conversions.
