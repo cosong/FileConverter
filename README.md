@@ -4,6 +4,11 @@
 
 This custom edition builds upon the 2.3 maintenance baseline, adding full **NVIDIA GPU hardware acceleration (NVENC & CUVID)** for ultra-fast media conversions and a complete, modern **Dark Theme** with Windows 10/11 system title bar support.
 
+<p align="center">
+  <img src="Resources/SettingsPresetsDark.png" width="49%" alt="Conversion Presets - Dark Theme" />
+  <img src="Resources/SettingsApplicationDark.png" width="49%" alt="Application Settings - Dark Theme" />
+</p>
+
 ---
 
 ## 📥 Downloads & Installation
