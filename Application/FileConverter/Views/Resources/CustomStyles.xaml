@@ -625,6 +625,90 @@
         </Setter>
     </Style>
 
+    <!-- ProgressBar Style -->
+    <Style TargetType="{x:Type ProgressBar}">
+        <Setter Property="OverridesDefaultStyle" Value="True"/>
+        <Setter Property="Background" Value="{DynamicResource ProgressBar_TrackBrush}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource ProgressBar_BorderBrush}"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="Foreground" Value="{DynamicResource MainBrush}"/>
+        <Setter Property="Height" Value="18"/>
+        <Setter Property="MinHeight" Value="6"/>
+        <Setter Property="MinWidth" Value="10"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type ProgressBar}">
+                    <Border x:Name="TemplateRoot"
+                            Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            CornerRadius="3"
+                            ClipToBounds="True"
+                            SnapsToDevicePixels="True">
+                        <Grid x:Name="PART_Track">
+                            <Border x:Name="PART_Indicator"
+                                    HorizontalAlignment="Left"
+                                    Background="{TemplateBinding Foreground}"
+                                    CornerRadius="2"/>
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger Property="Orientation" Value="Vertical">
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type ProgressBar}">
+                            <Border x:Name="TemplateRoot"
+                                    Background="{TemplateBinding Background}"
+                                    BorderBrush="{TemplateBinding BorderBrush}"
+                                    BorderThickness="{TemplateBinding BorderThickness}"
+                                    CornerRadius="3"
+                                    ClipToBounds="True"
+                                    SnapsToDevicePixels="True">
+                                <Grid x:Name="PART_Track">
+                                    <Border x:Name="PART_Indicator"
+                                            VerticalAlignment="Bottom"
+                                            Background="{TemplateBinding Foreground}"
+                                            CornerRadius="2"/>
+                                </Grid>
+                            </Border>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <!-- ToolTip Style -->
+    <Style TargetType="{x:Type ToolTip}">
+        <Setter Property="OverridesDefaultStyle" Value="True"/>
+        <Setter Property="Background" Value="{DynamicResource ToolTip_BackgroundBrush}"/>
+        <Setter Property="Foreground" Value="{DynamicResource ToolTip_ForegroundBrush}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource ToolTip_BorderBrush}"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="Padding" Value="6,3"/>
+        <Setter Property="FontSize" Value="12"/>
+        <Setter Property="HasDropShadow" Value="True"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type ToolTip}">
+                    <Border Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            CornerRadius="3"
+                            Padding="{TemplateBinding Padding}"
+                            SnapsToDevicePixels="True"
+                            TextBlock.Foreground="{TemplateBinding Foreground}"
+                            TextBlock.FontSize="{TemplateBinding FontSize}">
+                        <ContentPresenter/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
     <!-- Window Style -->
     <Style TargetType="{x:Type Window}">
         <Setter Property="Background" Value="{DynamicResource Window_BackgroundBrush}" />

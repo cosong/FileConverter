@@ -34,7 +34,7 @@ This custom edition builds upon the 2.3 maintenance baseline, adding full **NVID
 - **Deep Dark Aesthetic**: Consistent dark backgrounds, borders, and text across the entire interface (Settings, Diagnostics, Help, Upgrade windows).
 - **Theme Switcher**: Select between **System**, **Dark**, and **Light** themes at any time in the **Application** settings tab.
 - **Windows 10 / 11 DWM Integration**: Automatically styles the native OS window title bar and border to match the dark theme via Desktop Window Manager (`DwmSetWindowAttribute`).
-- **Fully Restyled Controls**: Custom dark styling for TabControls, TreeViews, ComboBoxes, Sliders, ScrollBars, CheckBoxes, RadioButtons, GroupBoxes, and Context Menus.
+- **Fully Restyled Controls**: Custom dark styling for TabControls, TreeViews, ComboBoxes, Sliders, ScrollBars, ProgressBars (clean recessed dark track), ToolTips (dark floating popups and slider AutoToolTips), CheckBoxes, RadioButtons, GroupBoxes, and Context Menus.
 
 ### 🌐 Ukrainian Localization (Українська локалізація)
 - **Complete Native Translation**: Full translation of the entire application, preset editor, application settings, diagnostics, and context menu integrations into Ukrainian (`uk` / `uk-UA`).

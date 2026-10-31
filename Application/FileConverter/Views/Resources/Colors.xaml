@@ -39,6 +39,20 @@
     <Color x:Key="ScrollBar_ThumbHoverColor">#999999</Color>
     <Color x:Key="ScrollBar_ThumbPressedColor">#707070</Color>
 
+    <!-- ToolTip -->
+    <Color x:Key="ToolTip_BackgroundColor">#FFFFFF</Color>
+    <Color x:Key="ToolTip_ForegroundColor">#202020</Color>
+    <Color x:Key="ToolTip_BorderColor">#CCCCCC</Color>
+    <SolidColorBrush x:Key="ToolTip_BackgroundBrush" Color="{StaticResource ToolTip_BackgroundColor}" />
+    <SolidColorBrush x:Key="ToolTip_ForegroundBrush" Color="{StaticResource ToolTip_ForegroundColor}" />
+    <SolidColorBrush x:Key="ToolTip_BorderBrush" Color="{StaticResource ToolTip_BorderColor}" />
+
+    <!-- ProgressBar -->
+    <Color x:Key="ProgressBar_TrackColor">#E6E6E6</Color>
+    <Color x:Key="ProgressBar_BorderColor">#D0D0D0</Color>
+    <SolidColorBrush x:Key="ProgressBar_TrackBrush" Color="{StaticResource ProgressBar_TrackColor}" />
+    <SolidColorBrush x:Key="ProgressBar_BorderBrush" Color="{StaticResource ProgressBar_BorderColor}" />
+
     <!-- Custom styles colors -->
     <SolidColorBrush x:Key="Button_BackgroundBrush" Color="{StaticResource Button_BackgroundColor}" />
     <SolidColorBrush x:Key="Button_BorderBrush" Color="{StaticResource Control_BorderColor}" />
